@@ -16,6 +16,7 @@ fn main() {
     println!("NOT true is {}", !true);
     
     println!("One million is written as {}", 1_000_000u32);
+    
     // array
     println!("Array ==================");
     let arr1 = [1,2,3,4];
@@ -27,6 +28,11 @@ fn main() {
     println!("Array 1 length is {:?}", arr1.len());
     println!("Array 1 memory size is {}", mem::size_of_val(&arr1));
     
+    // looping
+    for i in 0..arr2.len() {
+        println!("Index is {}", i);
+        // println!("Item is {}", arr2.get(i));
+    }
 
     // match, like switch case
     fn ov_match() {
