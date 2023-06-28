@@ -29,9 +29,9 @@ fn main() {
     println!("Array 1 memory size is {}", mem::size_of_val(&arr1));
     
     // looping
-    for i in 0..arr2.len() {
+    for i in 0..arr1.len() {
         println!("Index is {}", i);
-        // println!("Item is {}", arr2.get(i));
+        println!("Item is {}", arr1[i])
     }
 
     // match, like switch case
