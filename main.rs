@@ -21,7 +21,7 @@ fn main() {
     println!("Array ==================");
     let arr1 = [1,2,3,4];
     let arr2: [i32; 20] = [0; 20];
-    // let arr2: [i32; 500] = [0; 500];
+    
     println!("Array 1 is {:?}", arr1);
     println!("Array 2 is {:?}", arr2);
 
@@ -29,10 +29,14 @@ fn main() {
     println!("Array 1 memory size is {}", mem::size_of_val(&arr1));
     
     // looping
-    for i in 0..arr1.len() {
+    let looping_arr = [1,2,3,4];
+    for i in 0..looping_arr.len() {
         println!("Index is {}", i);
-        println!("Item is {}", arr1[i])
+        println!("Item is {}", looping_arr[i])
     }
+    // =================== Slice ===================
+    let slice1 : &[i8] = &[0, 1, 2,3,4];
+    println!("Slice 1 length is {}", slice1.len());
 
     // match, like switch case
     fn ov_match() {
