@@ -48,7 +48,10 @@ fn main() {
         }
     }
     ov_match();
-
+    // Vector
+    let mut numbers_vec:Vec<i32> = Vec::new();
+    numbers_vec.push(10);
+    println!("Vec numbers first elements is {}", numbers_vec[0]);
 
     // Function ===========
     fn get_greeting() {
