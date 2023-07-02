@@ -51,6 +51,7 @@ fn main() {
     // Vector
     let mut numbers_vec:Vec<i32> = Vec::new();
     numbers_vec.push(10);
+    numbers_vec.push(20);
     numbers_vec.push(30);
     println!("Vec numbers first elements is {}", numbers_vec[0]);
 
