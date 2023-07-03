@@ -57,7 +57,7 @@ fn main() {
 
     // Function ===========
     fn get_greeting() {
-        println!("Hello world!")
+        println!("Hello world!");
     }
 
     fn get_string() -> String {
@@ -65,5 +65,9 @@ fn main() {
     }
     get_greeting();
     println!("{}", get_string())
-    // Function ===========
+
+    fn get_greeting_without_return(str: String) -> String {
+        str
+    }
+    println!("Funtion can end without return statement : {}", get_greeting_without_return(String::from("Hello world")));
 }
