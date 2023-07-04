@@ -19,7 +19,7 @@ fn main() {
     
     // array
     println!("Array ==================");
-    let arr1 = [1,2,3,4];
+    let arr1 = [1,2,3,4, 65];
     let arr2: [i32; 20] = [0; 20];
     
     println!("Array 1 is {:?}", arr1);
