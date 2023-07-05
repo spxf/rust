@@ -16,6 +16,11 @@ fn main() {
     println!("NOT true is {}", !true);
     
     println!("One million is written as {}", 1_000_000u32);
+
+    // =================== assert_eq ===================
+    // assert_eq if fail will throw an error and cancel the program
+    // assert_eq!(6, 5); this code will broke prod
+    assert_eq!(5, 5);
     
     // array
     println!("Array ==================");
@@ -59,13 +64,11 @@ fn main() {
     fn get_greeting() {
         println!("Hello world!");
     }
-
-    fn get_string() -> String {
+    get_greeting();
+    fn get_greeting_with_return() -> String {
         return String::from("Hello world!");
     }
-    get_greeting();
-    println!("{}", get_string())
-
+    println!("Funtion end with return statement : {}", get_greeting_with_return());
     fn get_greeting_without_return(str: String) -> String {
         str
     }
