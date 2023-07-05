@@ -1,7 +1,6 @@
 use std::mem;
 
 fn main() {
-    
     println!("Hello world!");
 
     let greeting = "Hello world!";
