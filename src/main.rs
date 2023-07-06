@@ -27,7 +27,7 @@ fn main() {
     let arr2: [i32; 20] = [0; 20];
     
     println!("Array 1 is {:?}", arr1);
-    println!("Array 2 is {:?}", arr2);
+    println!("Array 2 is {:#?}", arr2);
 
     println!("Array 1 length is {:?}", arr1.len());
     println!("Array 1 memory size is {}", mem::size_of_val(&arr1));
@@ -38,6 +38,8 @@ fn main() {
         println!("Index is {}", i);
         println!("Item is {}", looping_arr[i])
     }
+
+
     // =================== Slice ===================
     let slice1 : &[i8] = &[0, 1, 2,3,4];
     println!("Slice 1 length is {}", slice1.len());
@@ -58,6 +60,8 @@ fn main() {
     numbers_vec.push(20);
     numbers_vec.push(30);
     println!("Vec numbers first elements is {}", numbers_vec[0]);
+
+    // 
 
     // Function ===========
     fn get_greeting() {
