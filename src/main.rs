@@ -46,10 +46,11 @@ fn main() {
 
     // match, like switch case
     fn ov_match() {
-        let condition = 1;
+        let condition = 2;
 
         match condition {
-            1 => println!("Overview match success, condition is {condition}"),
+            1 => println!("Overview match success, condition is 1"),
+            2 => println!("Overview match success, condition is 2"),
             _ => println!("Overview match success, condition is not founded")
         }
     }
