@@ -38,6 +38,8 @@ fn main() {
         println!("Index is {}", i);
         println!("Item is {}", looping_arr[i])
     }
+    
+    
 
 
     // =================== Slice ===================
@@ -77,4 +79,9 @@ fn main() {
         str
     }
     println!("Funtion can end without return statement : {}", get_greeting_without_return(String::from("Hello world")));
+
+    // Struct
+    struct Student {
+        name: String;
+    } 
 }
