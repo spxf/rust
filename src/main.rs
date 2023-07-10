@@ -84,4 +84,8 @@ fn main() {
     struct Student {
         name: String;
     } 
+
+    pub trait year_only {
+        fn year
+    }
 }
