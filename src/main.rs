@@ -62,6 +62,7 @@ fn main() {
     numbers_vec.push(10);
     numbers_vec.push(20);
     numbers_vec.push(30);
+    numbers_vec.push(40);
     println!("Vec numbers first elements is {}", numbers_vec[0]);
 
     // 
@@ -88,4 +89,7 @@ fn main() {
     pub trait year_only {
         fn year
     }
+
+    
+
 }
