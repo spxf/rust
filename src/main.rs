@@ -1,5 +1,9 @@
 use std::mem;
 
+mod s_vector;
+
+use s_vector::s_vector;
+
 fn main() {
     println!("Hello world!");
 
@@ -39,6 +43,32 @@ fn main() {
         println!("Item is {}", looping_arr[i])
     }
 
+    // Code unreachable allowed
+    #[allow(unreachable_code)]
+    fn loop_with_unreachable_code() {
+        let outer_loop_max_length: i8 = 4;
+        let mut outer_count: i8 = 0;
+        'outer: loop {
+            outer_count += 1;
+            if outer_count > outer_loop_max_length {
+                break;
+            }
+            let mut inner_count: i8 = 0;
+            loop {
+                inner_count += 1;
+                if inner_count > outer_loop_max_length {
+                    println!("Code broken in inner loop");
+                    break 'outer;
+                }
+            }
+            println!("This point will never be reached");
+        }
+    }
+    loop_with_unreachable_code();
+
+    // Vector
+    s_vector();
+
     // =================== Slice ===================
     let slice1: &[i8] = &[0, 1, 2, 3, 4];
     println!("Slice 1 length is {}", slice1.len());
@@ -54,15 +84,6 @@ fn main() {
         }
     }
     ov_match();
-    // Vector
-    let mut numbers_vec: Vec<i32> = Vec::new();
-    numbers_vec.push(10);
-    numbers_vec.push(20);
-    numbers_vec.push(30);
-    numbers_vec.push(40);
-    println!("Vec numbers first elements is {}", numbers_vec[0]);
-
-    //
 
     // Function ===========
     fn get_greeting() {
