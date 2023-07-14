@@ -18,7 +18,7 @@ fn main() {
     println!("true OR false is {}", true || false);
     println!("NOT true is {}", !true);
 
-    println!("One million is written as {}", 1_000_000u32);
+    println!("One million test is written as {}", 1_000_000u32);
 
     // =================== assert_eq ===================
     // assert_eq if fail will throw an error and cancel the program
