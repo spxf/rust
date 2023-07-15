@@ -1,1 +1,1 @@
-// Fill readme here
+This project for newbie learning Rust. Syntax and features covered!
